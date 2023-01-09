@@ -7,7 +7,7 @@ date: "`r Sys.Date()`"
 --- 
  
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
+ 
 ```{r, include = FALSE}
 ## usethis namespace: start
 #' @importFrom Rcpp sourceCpp
