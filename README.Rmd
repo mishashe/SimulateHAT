@@ -1,0 +1,80 @@
+---
+title: "SimulateHAT"
+output: 
+  github_document: default
+  html_document: default
+date: "`r Sys.Date()`"
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+## usethis namespace: start
+#' @importFrom Rcpp sourceCpp
+## usethis namespace: end
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Package description
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+The goal of SimulateHAT is to segment genome with mutations to segments with significantly different mutations density.
+
+## Installation
+
+You can install the development version of SimulateHAT from [GitHub](https://github.com/) with:
+
+``` {r install, include=TRUE, echo=TRUE, results='hide', message=FALSE, warning=FALSE,eval=FALSE}
+devtools::install_github("mishashe/SimulateHAT")
+```
+
+```{r mystuff, include=FALSE, echo=FALSE, results='hide', message=FALSE, warning=FALSE,eval=FALSE}
+# Rcpp::sourceCpp(paste0("~/Documents/Development/SimulateHAT/src/SimSingle.cpp"))
+# setwd("/home/misha/Documents/Development/SimulateHAT/")
+# tools::package_native_routine_registration_skeleton(".", character_only = FALSE)
+# pkgbuild::compile_dll(".",force = T)
+# Rcpp::compileAttributes("/home/misha/Documents/Development/SimulateHAT/")
+# devtools::document("/home/misha/Documents/Development/SimulateHAT/")
+ 
+# detach("package:SimulateHAT", unload=TRUE)
+# install.packages("devtools")
+# Sys.unsetenv("GITHUB_PAT")
+# install.packages("/home/misha/Documents/Development/SimulateHAT/", repos = NULL, type = "source",force=TRUE)
+# devtools::install_github("mishashe/SimulateHAT")
+# usethis::use_r("RcppExports.R")
+# usethis::create_package(): creates the file structure for a new package
+# usethis::use_r(): creates R files
+# devtools::load_all(): loads all functions in a package like when a package is installed and attached with library()
+# usethis::use_package("/home/misha/Documents/Development/SimulateHAT/"): adds a package dependency to the DESCRIPTION file
+# usethis::use_data(): saves an object in the R session as a dataset in the package
+# devtools::document(): creates documentation files in man/ and the NAMESPACE file from roxygen2 code (it is a wrapper of roxygen2::roxygenize())
+# usethis::use_vignette(): creates a new vignette in vignettes/
+# devtools::check(): builds and checks a package for any ERRORs, WARNINGs, or NOTEs
+# devtools::install(): uses R CMD INSTALL to install a package
+```
+
+
+To load necessary libraries:
+```{r libraries, echo=TRUE, results='hide', message=FALSE, warning=FALSE}
+library(SimulateHAT)
+library(RColorBrewer, quietly=T) # to plot results
+library(stringr)
+library(tidyverse)
+library(scales)
+library(ggExtra)
+library(stringi)
+library(ggplot2)
+library(plotrix)
+library(Rcpp)
+library(RcppArmadillo)
+library(roxygen2)
+options(warn=-1)
+```

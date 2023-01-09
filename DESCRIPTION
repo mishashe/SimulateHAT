@@ -1,0 +1,23 @@
+Package: SimulateHAT
+Title: The package simulates HAT
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3.9000
+Suggests: 
+    purrr
+Imports: 
+    RColorBrewer,
+    Rcpp,
+    stats,
+    RcppArmadillo
+URL: https://github.com/mishashe/SimulateHAT
+BugReports: https://github.com/mishashe/SimulateHAT/issues
+LinkingTo: 
+    Rcpp, RcppArmadillo
+Depends: RcppArmadillo
